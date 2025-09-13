@@ -60,7 +60,7 @@ export default function VisionPage() {
 
       {/* Header */}
       <div className="relative z-10 container mx-auto px-4 py-8">
-        <Button variant="ghost" onClick={() => router.back()} className="text-white hover:bg-white/10 mb-8">
+        <Button variant="ghost" onClick={() => router.push('/?scene=2')} className="text-white hover:bg-white/10 hover:text-white mb-8">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Home
         </Button>

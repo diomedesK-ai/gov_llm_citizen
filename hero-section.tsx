@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import PulsingBorderShader from "./components/pulsing-border-shader"
 import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState, useEffect } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 
 export default function Component() {
   const [currentScene, setCurrentScene] = useState(0)
@@ -12,6 +12,7 @@ export default function Component() {
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [isManualNavigation, setIsManualNavigation] = useState(false)
   const router = useRouter()
+  const searchParams = useSearchParams()
 
   const goToScene = (sceneIndex: number) => {
     if (sceneIndex === currentScene || isTransitioning) return
@@ -38,6 +39,21 @@ export default function Component() {
       goToScene(currentScene + 1)
     }
   }
+
+  // Handle URL scene parameter
+  useEffect(() => {
+    const sceneParam = searchParams.get('scene')
+    if (sceneParam) {
+      const sceneNumber = parseInt(sceneParam, 10)
+      if (sceneNumber >= 0 && sceneNumber <= 2) {
+        setCurrentScene(sceneNumber)
+        setIsManualNavigation(true)
+        if (sceneNumber === 2) {
+          setShowButton(true)
+        }
+      }
+    }
+  }, [searchParams])
 
   useEffect(() => {
     if (isManualNavigation) return
@@ -171,7 +187,7 @@ export default function Component() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-gray-600 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full bg-transparent"
+                  className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300"
                 >
                   Watch Demo
                 </Button>
@@ -179,7 +195,8 @@ export default function Component() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-gray-600 text-white hover:bg-gray-800 px-8 py-6 text-lg rounded-full bg-transparent"
+                  onClick={() => router.push('/architecture')}
+                  className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300"
                 >
                   Under the Hood
                 </Button>
