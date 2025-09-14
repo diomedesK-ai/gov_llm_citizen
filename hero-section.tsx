@@ -188,8 +188,9 @@ function HeroContent() {
                   variant="outline"
                   size="lg"
                   className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300"
+                  onClick={() => window.open('https://gov-assistant-civil-realtime.vercel.app/', '_blank')}
                 >
-                  Watch Demo
+                  Agents in Action
                 </Button>
 
                 <Button
