@@ -40,11 +40,11 @@ export default function ArchitecturePage() {
               Under the Hood
             </div>
           </div>
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 relative z-10">
-            <span className="text-purple-300 glow-text">Agentic AI</span> <span className="text-white">Architecture</span>
+          <h1 className="text-4xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 relative z-10 glow-text">
+            <span className="text-purple-300">Agentic AI</span> <span className="text-white">Architecture</span>
           </h1>
-          <p className="text-2xl text-gray-300 leading-relaxed mb-8 max-w-5xl mx-auto relative z-10 font-medium">
-            Powered by the <span className="text-purple-300 particle-text-enhanced glow-text">National LLM</span>, this architecture enables sovereign AI capabilities for government operations with enterprise-grade security and compliance.
+          <p className="text-2xl text-gray-300 leading-relaxed mb-12 max-w-5xl mx-auto relative z-10 font-medium">
+            Powered by the <span className="text-purple-300 glow-text">National LLM</span>, this architecture enables sovereign AI capabilities for government operations with enterprise-grade security and compliance.
           </p>
         </div>
 
@@ -101,13 +101,13 @@ export default function ArchitecturePage() {
                     {/* Connection line - 70% transparent */}
                     <div className="absolute top-1/2 left-0 right-0 h-px bg-purple-400/10 z-0"></div>
                     
-                    <div className="bg-gray-700/50 px-4 py-2 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">MS Teams/Slack</div>
-                    <div className="bg-gray-700/50 px-4 py-2 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Voice</div>
-                    <div className="bg-gray-700/50 px-4 py-2 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Browsers</div>
-                    <div className="bg-purple-600/80 px-4 py-2 rounded-full text-sm text-white font-medium relative z-10 glow-text border border-purple-400">Core AI</div>
-                    <div className="bg-gray-700/50 px-4 py-2 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Intranets</div>
-                    <div className="bg-gray-700/50 px-4 py-2 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Service Portals</div>
-                    <div className="bg-gray-700/50 px-4 py-2 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Apps</div>
+                    <div className="bg-gray-700/50 px-5 py-3 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">MS Teams/Slack</div>
+                    <div className="bg-gray-700/50 px-5 py-3 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Voice</div>
+                    <div className="bg-gray-700/50 px-5 py-3 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Browsers</div>
+                    <div className="bg-purple-600/40 px-5 py-3 rounded-full text-sm text-white font-medium relative z-10 glow-text border border-purple-400">Core AI</div>
+                    <div className="bg-gray-700/50 px-5 py-3 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Intranets</div>
+                    <div className="bg-gray-700/50 px-5 py-3 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Service Portals</div>
+                    <div className="bg-gray-700/50 px-5 py-3 rounded-full text-sm text-gray-300 relative z-10 border border-gray-600/50">Apps</div>
                   </div>
                 </div>
 
@@ -116,39 +116,51 @@ export default function ArchitecturePage() {
                   
                   {/* Left Sidebar */}
                   <div className="col-span-3 space-y-6">
-                    {/* Workflow Studio */}
-                    <div className="bg-gray-800/30 border-2 border-purple-500/30 rounded-2xl p-6 backdrop-blur-sm">
-                      <h3 className="text-purple-300 font-semibold text-lg mb-4 text-center uppercase tracking-wide glow-text">Workflow Studio</h3>
-                      <div className="bg-gray-700/30 p-3 rounded-lg mb-4 border-l-4 border-purple-400">
-                        <p className="text-gray-300 text-sm">Grounds Agent in enterprise specific business process</p>
+                    {/* Guardrails */}
+                    <div className="bg-gradient-to-br from-red-900/40 via-gray-800/30 to-red-900/25 border-2 border-red-500/30 rounded-2xl p-6 text-center backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/20 cursor-pointer">
+                      <h3 className="text-red-300 font-semibold text-xl mb-3 uppercase tracking-wide glow-text">Guardrails</h3>
+                      <div className="bg-gray-700/30 p-3 rounded-lg mb-4 border-l-4 border-red-400">
+                        <p className="text-gray-300 text-sm text-left">Ensures AI compliance, safety, and adherence to standards.</p>
                       </div>
                       
                       <div className="mt-6">
-                        <h4 className="text-blue-300 font-medium text-sm mb-3 uppercase tracking-wide">Forms/Slots</h4>
+                        <h4 className="text-red-300 font-medium text-sm mb-3 uppercase tracking-wide text-left">Principles</h4>
                         <div className="space-y-2">
-                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Preset templates</div>
-                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">API integrations</div>
-                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">AI Workflows</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-red-400 text-left">AI Content Safety</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-red-400 text-left">Performance & Cost</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-red-400 text-left">Ethics and Bias</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-red-400 text-left">AI Trust & Safety</div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Knowledge Management */}
-                    <div className="bg-gray-800/30 border-2 border-blue-500/30 rounded-2xl p-6 backdrop-blur-sm">
-                      <h3 className="text-blue-300 font-semibold text-lg mb-4 text-center uppercase tracking-wide glow-text">Knowledge Management</h3>
-                      <div className="bg-gray-700/30 p-3 rounded-lg border-l-4 border-blue-400">
-                        <p className="text-gray-300 text-sm">Grounds Agent in enterprise knowledge</p>
+                    {/* Workflow Studio */}
+                    <div className="bg-gray-800/30 border-2 border-purple-500/30 rounded-2xl p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer">
+                      <h3 className="text-purple-300 font-semibold text-lg mb-4 text-center uppercase tracking-wide glow-text">Workflow Studio</h3>
+                      <div className="bg-gray-700/30 p-3 rounded-lg mb-4 border-l-4 border-purple-400">
+                        <p className="text-gray-300 text-sm">Grounds Agent in government specific business process</p>
+                      </div>
+                      
+                      <div className="mt-6">
+                        <h4 className="text-purple-300 font-medium text-sm mb-3 uppercase tracking-wide">Forms/Slots</h4>
+                        <div className="space-y-2">
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Preset templates</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">API integrations</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">AI Workflows</div>
+                          <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Dynamic Forms</div>
+                        </div>
                       </div>
                     </div>
+
                   </div>
 
                   {/* Center Section */}
                   <div className="col-span-6 space-y-6">
                     
                     {/* Orchestrator */}
-                    <div className="bg-gray-800/30 border-2 border-gray-600 rounded-2xl p-6 backdrop-blur-sm">
-                      <h2 className="text-white font-semibold text-xl mb-6 text-center uppercase tracking-wide glow-text">Orchestrator</h2>
-                      <div className="grid grid-cols-4 gap-4 mb-6">
+                    <div className="bg-gray-800/30 border-2 border-gray-600 rounded-2xl p-4 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-gray-500/20 cursor-pointer">
+                      <h2 className="text-white font-semibold text-xl mb-4 text-center uppercase tracking-wide glow-text">Orchestrator</h2>
+                      <div className="grid grid-cols-4 gap-4 mb-4">
                         <div className="bg-gray-700/30 p-3 rounded-lg text-center border border-gray-600">
                           <h4 className="text-blue-300 font-medium text-sm mb-1 glow-text">Understands</h4>
                           <p className="text-gray-400 text-xs">the request</p>
@@ -169,11 +181,11 @@ export default function ArchitecturePage() {
                     </div>
 
                     {/* Agents Section */}
-                    <div className="bg-gradient-to-br from-fuchsia-900/40 via-gray-800/30 to-fuchsia-900/25 border-2 border-fuchsia-500/30 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_30px_rgba(236,72,153,0.3)]">
+                    <div className="bg-gradient-to-br from-fuchsia-900/40 via-gray-800/30 to-fuchsia-900/25 border-2 border-fuchsia-500/30 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_30px_rgba(236,72,153,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-fuchsia-500/20 cursor-pointer">
                       <h3 className="text-white font-semibold text-xl mb-4 text-center uppercase tracking-wide glow-text">Agents</h3>
                       <p className="text-gray-300 text-sm text-center mb-6 leading-relaxed">
-                        An AI Agent reads instructions, uses its memory and skills, and connects with apps to finish tasks. 
-                        Acts like a digital teammate that handles specific jobs (e.g., help, finance, HR) and learns from feedback.
+                        AI Agents use memory and skills to complete tasks by connecting with apps. 
+                        They act as digital teammates for specific jobs and learn from feedback.
                       </p>
                       
                       <div className="grid grid-cols-2 gap-6 mb-6">
@@ -197,34 +209,28 @@ export default function ArchitecturePage() {
                       <div className="bg-gray-700/30 p-4 rounded-lg border border-gray-600">
                         <h4 className="text-yellow-300 font-medium text-sm mb-3 text-center uppercase tracking-wide glow-text">Functional Agent</h4>
                         <div className="grid grid-cols-2 gap-3">
-                          <div className="bg-gray-600/30 p-2 rounded text-xs text-gray-400 border-l-2 border-yellow-400">IT Support Agent</div>
-                          <div className="bg-gray-600/30 p-2 rounded text-xs text-gray-400 border-l-2 border-yellow-400">Account Receivables</div>
+                          <div className="bg-gray-600/30 p-2 rounded text-xs text-gray-400 border-l-2 border-yellow-400">Citizen Complaints Agent</div>
+                          <div className="bg-gray-600/30 p-2 rounded text-xs text-gray-400 border-l-2 border-yellow-400">Public Safety Agent</div>
                           <div className="bg-gray-600/30 p-2 rounded text-xs text-gray-400 border-l-2 border-yellow-400">Procurement Agent</div>
                           <div className="bg-gray-600/30 p-2 rounded text-xs text-gray-400 border-l-2 border-yellow-400">Payroll Specialist</div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Guardrails */}
-                    <div className="bg-gradient-to-br from-red-900/40 via-gray-800/30 to-red-900/25 border-2 border-red-500/30 rounded-2xl p-6 text-center backdrop-blur-sm">
-                      <h3 className="text-red-300 font-semibold text-xl mb-3 uppercase tracking-wide glow-text">Guardrails</h3>
-                      <p className="text-gray-300 text-sm mb-4">Guardrails make sure AI follows rules, avoids mistakes, and doesn't say or do anything unsafe.</p>
-                      <div className="flex justify-center gap-3 flex-wrap">
-                        <div className="bg-gray-700/30 px-3 py-2 rounded-lg text-xs text-gray-400 border border-red-400/30">AI Content Safety</div>
-                        <div className="bg-gray-700/30 px-3 py-2 rounded-lg text-xs text-gray-400 border border-red-400/30">Performance & Cost</div>
-                        <div className="bg-gray-700/30 px-3 py-2 rounded-lg text-xs text-gray-400 border border-red-400/30">Ethics and Bias</div>
-                        <div className="bg-gray-700/30 px-3 py-2 rounded-lg text-xs text-gray-400 border border-red-400/30">AI Trust & Safety</div>
+                    {/* National LLM */}
+                    <div className="bg-gray-800/60 border-2 border-purple-500/50 rounded-2xl p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer shadow-[0_0_25px_rgba(168,85,247,0.25)]">
+                      <h3 className="text-purple-300 font-semibold text-xl mb-2 text-center uppercase tracking-wide glow-text">National LLM</h3>
+                      <p className="text-gray-300 text-sm text-center mb-3">Sovereign AI foundation powering all government agents with secure, compliant, and specialized capabilities</p>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-gray-700/30 p-3 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Sovereign Data</div>
+                        <div className="bg-gray-700/30 p-3 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Multi-Language</div>
+                        <div className="bg-gray-700/30 p-3 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Gov-Specific Finetuning</div>
+                        <div className="bg-gray-700/30 p-3 rounded-lg text-xs text-gray-400 border-l-2 border-purple-400">Knowledge Management</div>
                       </div>
                     </div>
 
-                    {/* National LLM */}
-                    <div className="bg-gradient-to-br from-purple-900/40 via-gray-800/30 to-purple-900/25 border-2 border-purple-500/30 rounded-2xl p-6 text-center backdrop-blur-sm">
-                      <h3 className="text-purple-300 font-semibold text-xl mb-3 uppercase tracking-wide glow-text">National LLM</h3>
-                      <p className="text-gray-300 text-sm mb-4">Sovereign AI foundation powering all government agents with secure, compliant, and specialized capabilities</p>
-                    </div>
-
                     {/* Agentic Landing Zone */}
-                    <div className="bg-gradient-to-br from-white/10 via-gray-800/30 to-white/5 border-2 border-white/30 rounded-2xl p-4 text-center backdrop-blur-sm shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                    <div className="bg-gradient-to-br from-white/10 via-gray-800/30 to-white/5 border-2 border-white/30 rounded-2xl p-4 text-center backdrop-blur-sm shadow-[0_0_30px_rgba(255,255,255,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/10 cursor-pointer">
                       <h3 className="text-white font-semibold text-lg mb-2 uppercase tracking-wide glow-text">Agentic Landing Zone</h3>
                       <p className="text-gray-300 text-xs mb-3">Secure deployment environment where AI agents are instantiated, configured, and managed</p>
                       <div className="grid grid-cols-3 gap-3">
@@ -259,17 +265,30 @@ export default function ArchitecturePage() {
                   {/* Right Sidebar */}
                   <div className="col-span-3 space-y-6">
                     {/* Observability */}
-                    <div className="bg-gray-800/30 border-2 border-green-500/30 rounded-2xl p-6 backdrop-blur-sm">
-                      <h3 className="text-green-300 font-semibold text-lg text-center uppercase tracking-wide glow-text">Observability & Governance</h3>
+                    <div className="bg-gray-800/50 border-2 border-green-500/50 rounded-2xl p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20 cursor-pointer">
+                      <h3 className="text-green-300 font-semibold text-lg mb-4 text-center uppercase tracking-wide glow-text">Observability & Governance</h3>
+                      <div className="bg-gray-700/30 p-3 rounded-lg mb-4 border-l-4 border-green-400">
+                        <p className="text-gray-300 text-sm">Monitors AI system operations and compliance oversight.</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-green-400">Real-time Monitoring</div>
+                        <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-green-400">Audit Trails</div>
+                        <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-green-400">Policy Compliance</div>
+                        <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-green-400">Performance Metrics</div>
+                      </div>
                     </div>
 
                     {/* Transparency Dashboard */}
-                    <div className="bg-gray-800/30 border-2 border-blue-500/30 rounded-2xl p-6 backdrop-blur-sm">
+                    <div className="bg-gray-800/30 border-2 border-blue-500/30 rounded-2xl p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
                       <h3 className="text-blue-300 font-semibold text-lg mb-4 text-center uppercase tracking-wide glow-text">Transparency Dashboard</h3>
+                      <div className="bg-gray-700/30 p-3 rounded-lg mb-4 border-l-4 border-blue-400">
+                        <p className="text-gray-300 text-sm">System performance visibility and operational insights.</p>
+                      </div>
                       <div className="space-y-2">
                         <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-blue-400">Knowledge Health Dashboard</div>
                         <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-blue-400">Analytics</div>
                         <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-blue-400">Helpdesk Insights</div>
+                        <div className="bg-gray-700/30 p-2 rounded-lg text-xs text-gray-400 border-l-2 border-blue-400">Performance Metrics</div>
                       </div>
                     </div>
                   </div>
