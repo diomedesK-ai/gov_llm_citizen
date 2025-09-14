@@ -3,10 +3,10 @@
 import { Button } from "@/components/ui/button"
 import PulsingBorderShader from "./components/pulsing-border-shader"
 import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from "lucide-react"
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 
-export default function Component() {
+function HeroContent() {
   const [currentScene, setCurrentScene] = useState(0)
   const [showButton, setShowButton] = useState(false)
   const [isTransitioning, setIsTransitioning] = useState(false)
@@ -509,5 +509,13 @@ export default function Component() {
         }
       `}</style>
     </div>
+  )
+}
+
+export default function Component() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-black" />}>
+      <HeroContent />
+    </Suspense>
   )
 }

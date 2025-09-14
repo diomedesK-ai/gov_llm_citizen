@@ -1,6 +1,29 @@
+"use client"
+
 import { PulsingBorder } from "@paper-design/shaders-react"
+import { useEffect, useState } from "react"
 
 export default function PulsingBorderShader(props: any) {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return (
+      <div
+        style={{
+          width: "535px",
+          height: "511px",
+          borderRadius: "0px",
+          backgroundImage:
+            "radial-gradient(circle in oklab, oklab(0% 0 -.0001 / 0%) 25.22%, oklab(30.5% 0.029 -0.184) 43.89%, oklab(0% 0 -.0001 / 0%) 60.04%)",
+        }}
+      />
+    )
+  }
+
   return (
     <PulsingBorder
       colors={["#5800FF", "#BEECFF", "#E77EDC", "#FF4C3E"]}
