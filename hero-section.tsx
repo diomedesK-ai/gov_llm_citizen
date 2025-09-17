@@ -162,12 +162,12 @@ function HeroContent() {
               <div className="space-y-6 relative z-10">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
                   If every citizen had their{" "}
-                  <span className="text-purple-300 particle-text-enhanced glow-text">personal agent</span> and every employee a{" "}
+                  <span className="text-purple-300 particle-text-enhanced glow-text">digital concierge</span> and every employee a{" "}
                   <span className="text-purple-300 particle-text-enhanced glow-text">digital colleague</span>
                 </h1>
 
                 <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-2xl animate-subtitle-fade">
-                  A digital companion that understands your needs, navigates bureaucracy, and ensures your voice is
+                  A digital concierge that understands your needs, navigates bureaucracy, and ensures your voice is
                   heard in government.
                 </p>
               </div>
@@ -187,7 +187,7 @@ function HeroContent() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300"
+                  className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300 ring-1 ring-purple-400/20 hover:ring-purple-300/40 shadow-[0_0_12px_rgba(168,85,247,0.25)] hover:shadow-[0_0_24px_rgba(168,85,247,0.45)]"
                   onClick={() => window.open('https://gov-assistant-civil-realtime.vercel.app/', '_blank')}
                 >
                   Agents in Action
@@ -197,7 +197,7 @@ function HeroContent() {
                   variant="outline"
                   size="lg"
                   onClick={() => router.push('/architecture')}
-                  className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300"
+                  className="border-gray-600 text-white hover:bg-white/10 hover:border-gray-400 hover:text-white px-8 py-6 text-lg rounded-full bg-transparent transition-all duration-300 ring-1 ring-purple-400/20 hover:ring-purple-300/40 shadow-[0_0_12px_rgba(168,85,247,0.25)] hover:shadow-[0_0_24px_rgba(168,85,247,0.45)]"
                 >
                   Under the Hood
                 </Button>

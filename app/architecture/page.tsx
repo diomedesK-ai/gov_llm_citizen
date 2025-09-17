@@ -35,7 +35,7 @@ export default function ArchitecturePage() {
       <div className="relative z-10 pt-20 pb-8">
         <div className="container mx-auto px-6 text-center">
           <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm ring-1 ring-purple-400/20 shadow-[0_0_12px_rgba(168,85,247,0.25)]">
               <Sparkles className="w-4 h-4" />
               Under the Hood
             </div>

@@ -79,7 +79,7 @@ export default function VisionPage() {
             </div>
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 relative z-10">
-            One Citizen, One Digital Companion<br />
+            One Citizen, One digital concierge<br />
             <span className="text-purple-300 glow-text">Government at Digital Speed</span>
           </h1>
           <p className="text-2xl text-gray-300 leading-relaxed mb-8 max-w-5xl mx-auto relative z-10 font-medium">
@@ -205,9 +205,9 @@ export default function VisionPage() {
                     <textPath href="#arc-inner-top" startOffset="50%">Citizen AI Agents</textPath>
                   </text>
                   
-                  {/* Citizen Daily Companion subtitle */}
+                  {/* Citizen digital concierge subtitle */}
                   <text textAnchor="middle" letterSpacing="0.8px" className="text-base font-semibold" fill={white} filter="url(#glow)">
-                    <textPath href="#arc-inner-top-2" startOffset="50%">Citizen Daily Companion</textPath>
+                    <textPath href="#arc-inner-top-2" startOffset="50%">Citizen digital concierge</textPath>
                   </text>
                   
                   {/* Bottom half - Government AI Colleagues */}
@@ -266,11 +266,11 @@ export default function VisionPage() {
                   </text>
                 </svg>
 
-                {/* CENTER PULSING BORDER SHADER - CONCENTRIC */}
+                {/* CENTER PULSING BORDER SHADER - CONCENTRIC (locked center with offset) */}
                 <div className="absolute" style={{
-                  left: `${centerX - 65 + 80}px`, 
-                  top: `${centerY - 55 + 210}px`, 
-                  transform: 'translate(-50%, -50%)',
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(calc(-50% - 50px), calc(-50% - 130px))',
                   width: `${r_core * 2}px`, 
                   height: `${r_core * 2}px`
                 }}>
@@ -279,14 +279,14 @@ export default function VisionPage() {
                     <div className="absolute inset-0" style={{transform: `scale(${(r_core * 2) / 535})`}}>
                       <PulsingBorderShader />
                     </div>
-                    {/* Center text overlay - repositioned */}
-            <div className="absolute inset-0 flex items-center justify-center z-10" style={{transform: 'translate(60px, 55px)'}}> 
-              <div className="text-center">
-                <div className="text-xl font-bold text-white leading-tight">Government</div>
-                <div className="text-xl font-bold text-white leading-tight">Agentic AI Workforce</div>
-                <div className="text-sm text-purple-300 mt-1 leading-tight">Powered by the National LLM</div>
-              </div>
-            </div>
+                    {/* Center text overlay - perfectly centered */}
+                    <div className="absolute inset-0 flex items-center justify-center z-10" style={{transform: 'translate(60px, 50px)'}}>
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-white leading-tight">Government</div>
+                        <div className="text-xl font-bold text-white leading-tight">Agentic AI Workforce</div>
+                        <div className="text-sm text-purple-300 mt-1 leading-tight">Powered by the National LLM</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
