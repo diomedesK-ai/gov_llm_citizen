@@ -161,7 +161,7 @@ function HeroContent() {
 
               <div className="space-y-6 relative z-10">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
-                  If every citizen had their{" "}
+                  If every citizen had a{" "}
                   <span className="text-purple-300 particle-text-enhanced glow-text">digital concierge</span> and every employee a{" "}
                   <span className="text-purple-300 particle-text-enhanced glow-text">digital colleague</span>
                 </h1>
